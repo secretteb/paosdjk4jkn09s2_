@@ -17,6 +17,14 @@ html {
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+img {
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 body {
   background:
            /* top, transparent black, faked with gradient */ linear-gradient(
