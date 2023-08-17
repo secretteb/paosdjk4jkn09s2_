@@ -216,6 +216,27 @@ body {
   max-width: 400px;
 }
 
+.nameMain2 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 8px;
+  animation-name: init;
+  animation-duration: 1s;
+  color: #fff;
+  font-weight: 500;
+  font-size: 44px;
+  margin: 0;
+}
+
+.smallerMain2 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 8px;
+  animation-name: init;
+  animation-duration: 1s;
+  margin-top: 5px;
+  color: #747474;
+  font-weight: 500;
+  font-size: 17px;
+  max-width: 400px;
+}
+
 .nameMain404 {
   text-shadow: rgba(0, 0, 0, 0.5) 0 2px 8px;
   animation-name: init404;

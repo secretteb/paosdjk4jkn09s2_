@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+  opacity: 0;
+  margin-top: 10px;
+  display: flex;
+  transition: all 0.2s;
+  animation-name: init;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+a:hover {
+  color: #fff;
+}

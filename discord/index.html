@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW87BT2BNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PW87BT2BNH');
+    </script>
+    <meta charset="utf-8">
+    <title>Discord Activity Test Page</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="outuby.space dc test" property="og:title"/>
+    <meta content="why are you here?" property="og:description"/>
+    <meta content="https://outuby.space" property="og:url"/>
+    <meta content="https://outuby.space/img/outubyismygod.png" property="og:image"/>
+    <meta content="#BD00FF" data-react-helmet="true" name="theme-color"/>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script src="script/uuhm.js"></script>
+
+    <meta content="If you read this you have to subscribe to my yt :)" name="description">
+
+    <link href="https://outuby.space/img/outubyismygod.png" rel="icon" type="image/ico"/>
+  </head>
+  <body>
+    <div id="container">
+      <div id="time_display">Loading...</div>
+      </div>
+      <div class="center">
+        <p class="nameMain">Discord Activity Test Page</p>
+        <p class="smallerMain">this better work or else...</p>
+        <div class="gap"></div>
+        <div class="panel discordPanel">
+          <i class="discord fa-brands fa-discord"></i>
+          <div class="statusCircle" id="statusCircle"></div>
+          <a id="avatarLink" target="_blank" href=""
+            ><img
+              class="discordAvatar"
+              id="discordAvatar"
+              src="./template/transparent.png"
+          /></a>
+          <p class="discordName" id="discordName">Loading...</p>
+          <p class="discordMotd" id="discordMotd">Loading...</p>
+    </div>
+    <div class="gap"></div>
+    <div class="panel spotifyPanel">
+      <i class="spotify fa-brands fa-spotify"></i>
+      <a id="trackLink" target="_blank" href=""
+        ><img class="trackImg" id="trackImg" src="./template/musicDefault.png"
+      /></a>
+      <p class="trackName" id="trackName">None</p>
+      <p class="trackArtist" id="trackArtist">
+        I'm currently not listening to anything
+      </p>
+    </div>
+    <div class="gap"></div>
+    <div id="rpcPanel" class="panel rpcPanel">
+      <i class="game fa-solid fa-gamepad"></i>
+      <img
+        class="rpcSmallIcon"
+        id="rpcSmallIcon"
+        src="./template/transparent.png"
+      />
+      <img class="rpcIcon" id="rpcIcon" src="./template/gameDefault.png" />
+      <p class="rpcName" id="rpcName">Nothing</p>
+      <p class="rpcDetails" id="rpcDetails">
+        I'm currently not playing anything
+      </p>
+    </div>
+      </div>
+    <div class="copyright">
+    <span>
+      Copyright ©
+      <script> document.write(new Date().getFullYear()); </script>
+      outuby.space
+    </span>
+    </div>
+    <script src="script/websocket.js"></script>
+  </body>
+</html>
