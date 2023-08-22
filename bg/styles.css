@@ -58,7 +58,8 @@ p {
 .color-box {
     width: 50px;
     height: 50px;
-    background-color: rgba(86, 86, 86, 1);
+    /*background-color: rgba(86, 86, 86, 1);*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +70,8 @@ p {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .color-box.expanded {
@@ -114,7 +117,6 @@ p {
     opacity: 0;
 }
 
-/* text on the top right side */
 .trs {
     position: absolute;
     top: 5px;
@@ -146,27 +148,27 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 18px;
     height: 18px;
-    background: #3498db;
+    background: #ffffff;
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-    background: #2980b9;
+    background: #e0e0e0;
 }
 
 input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #3498db;
+    background: #ffffff;
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 input[type="range"]::-moz-range-thumb:hover {
-    background: #2980b9;
+    background: #e0e0e0;
 }
 
 .copyright {
