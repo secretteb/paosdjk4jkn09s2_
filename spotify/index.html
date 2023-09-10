@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW87BT2BNH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PW87BT2BNH');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="Spotify API" property="og:title"/>
+    <meta content="why are you here?" property="og:description"/>
+    <meta content="https://outuby.space" property="og:url"/>
+    <meta content="https://outuby.space/img/outubyismygod.png" property="og:image"/>
+    <meta content="#BD00FF" data-react-helmet="true" name="theme-color"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script src="../discord/script/uuhm.js"></script>
+
+    <meta content="If you read this you have to subscribe to my yt :)" name="description">
+
+    <link href="https://outuby.space/img/outubyismygod.png" rel="icon" type="image/ico"/>
+    <title>Spotify Stats</title>
+</head>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Spotify Stats</h1>
+<div class="button_nteo">
+    <button onclick="login()">Connect to Spotify</button>
+    <button type="submit" value="Submit" onclick="updateData()">Update</button>
+</div>
+<div class="choose_sorting_method">
+    <p id="most_played_tracksCSM" class="currently_selected" onclick="chooseSortingMethod('tracks'); updateData();">Most Played</p>
+    <h6></h6>
+    <p id="most_played_artistCSM" onclick="chooseSortingMethod('artist'); updateData();">Top Artists</p>
+    <h6></h6>
+    <p id="song_history_CSM" onclick="chooseSortingMethod('song_history'); updateData();">Song History</p>
+    <h6></h6>
+    <p id="track_information_getter_CSM" onclick="chooseSortingMethod('track_information_getter');">Song Information</p>
+    <!-- TODO: add player/currently playing with controls -->
+<!--    <h6></h6>-->
+<!--    <p id="most_played_genresCSM" onclick="chooseSortingMethod('genres')">Top Genres</p>-->
+<!--    <h6></h6>-->
+<!--    <p id="most_played_moodsCSM" onclick="chooseSortingMethod('moods')">Average Mood</p>-->
+</div>
+<div id="top_tracks" class="selection_th" style="display: none">
+    <div>
+        <form>
+            <label for="time_range_TOP_TRACKS">Choose a time range:</label>
+            <select name="time_range" id="time_range_TOP_TRACKS">
+                <option value="short_term">4 Weeks</option>
+                <option value="medium_term" selected >6 Months</option>
+                <option value="long_term">All Time</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label for="limit_TOP_TRACKS">Choose how many songs should be displayed:</label>
+            <select name="limit" id="limit_TOP_TRACKS">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30" selected >30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+        </form>
+    </div>
+</div>
+
+<div id="top_artists" class="selection_th">
+    <div>
+        <form>
+            <label for="time_range_top_artists">Choose a time range:</label>
+            <select name="time_range" id="time_range_top_artists">
+                <option value="short_term">4 Weeks</option>
+                <option value="medium_term" selected >6 Months</option>
+                <option value="long_term">All Time</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label for="limit_top_artists">Choose how many artists should be displayed:</label>
+            <select name="limit" id="limit_top_artists">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30" selected >30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+        </form>
+    </div>
+</div>
+
+<div id="track_information_getter" style="display: none">
+    <input type="text" id="song_id_CSM" placeholder="Song ID/Spotify Link">
+    <button type="submit" value="Submit" onclick="updateData()">Search Song</button>
+</div>
+
+<p id="debug" style="display: none"></p>
+
+<input readonly>
+<div id="content"></div>
+<input readonly>
+<br>
+<br>
+<div class="copyright" id="copyright">
+    <span>
+      Copyright ©
+      <script> document.write(new Date().getFullYear()); </script>
+      outuby.space
+    </span>
+</div>
+
+<script src="script.js"></script>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+</body>
+</html>
