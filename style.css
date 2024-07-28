@@ -9,6 +9,7 @@ a {
   animation-duration: 1s;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
+  flex-direction: column;
 }
 
 a:hover {
